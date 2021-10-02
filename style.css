@@ -4,7 +4,7 @@
     box-sizing: border-box;
     /* font-family: 'Signika', sans-serif; */
     /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Gemunu Libre', sans-serif;
+    /* font-family: 'Gemunu Libre', sans-serif; */
 
    
 }
@@ -13,6 +13,10 @@
     --color--main: #fcaf17;
     --color--dark: #3f2c06;
     --color--white: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,11 +36,12 @@ p {
 main {
     max-width: 1750px;
     margin: 0 auto;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
 
 .secondary-header {
-    padding: 2em 3em 0 0;
+    padding: 2em 3em 1em 0;
     height: 8vh;
     text-align: right;
     text-transform: uppercase;
@@ -63,6 +68,7 @@ main {
     min-height: 8vh;
     height: fit-content;
     background-color: var(--color--white);
+
     margin-bottom: 2em;
     /* opacity: .9; */
     z-index: 10;
@@ -78,10 +84,11 @@ main {
     /* align-items: center; */
     /* margin: 0 auto; */
     /* width: 95%; */
-    padding: 4em 3em;
+    /* padding: 4em 3em;  */
+    padding: 4.5em  3em 1.5em 3em;
     /* max-width: 1700px; */
     /* justify-items: center; */
-    transition: all 300ms ease-in;
+    transition: padding 200ms ease-in;
 }
 
 .nav__bar__logo {
@@ -121,22 +128,29 @@ main {
     position: relative;
     list-style-type: none;
     
+    
 }
 
-.nav-links a {
-    /* display: inline-block; */
-    /* position: absolute; */
-    /* margin-left: 5em; */
-    padding-left: 5em;
 
-    
+
+.nav-link{
+    transition: padding-left 300ms ease;
+    transition-delay: 200ms;
+    padding-left: 6em    /*Padding-left is dynamically added in a script, this is just a fall back value*/
+}
+
+
+.nav-link a {
+   
     list-style: none;
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
     white-space: nowrap;
     transition: color 200ms ease;
-    /* list-style-type: none; */
+    list-style-type: none;
+    /* transition: padding-left 300ms ease;
+    transition-delay: 100ms; */
 }
 
 .nav-links a:focus,
