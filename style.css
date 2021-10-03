@@ -15,9 +15,9 @@
     --color--white: white;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     /* font-family: 'Signika', sans-serif; */
@@ -136,7 +136,8 @@ main {
 .nav-link{
     transition: padding-left 300ms ease;
     transition-delay: 200ms;
-    padding-left: 6em    /*Padding-left is dynamically added in a script, this is just a fall back value*/
+    padding-left: 6em;    /*Padding-left is dynamically added in a script, this is just a fall back value*/
+    cursor: pointer;
 }
 
 
@@ -238,9 +239,11 @@ main {
     position: relative;
     display: inline;
     text-transform: uppercase;
-    white-space: nowrap;
+    /* text-align: center; */
+    white-space: wrap;
     font-size: 3rem;
     letter-spacing: 3px;
+    line-height: 1.5;
     /* border: 2px solid red; */
     /* text-align: center; */
     margin:  0 1rem;
@@ -253,7 +256,7 @@ main {
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -562,3 +565,24 @@ main {
     to {left: -100%}
   } */
 
+.section-five {
+    background-color: var(--color--main);
+    padding: 0 3em;
+    text-align: center;
+}
+
+.section-five__header {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: .5em 0;
+    letter-spacing: 3px;
+}
+
+.section-five__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left; 
+}
