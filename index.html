@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Final Frontier</title>
 </head>
@@ -27,13 +27,13 @@
     <header class="nav__bar__container ">
         <nav class="secondary-header">
             <ul class="nav-links">
-                <li class="nav-link" ><a onclick="scrollToSection('section-four')">Our Story</a></li>
-                <li class="nav-link"><a onclick="scrollToSection('section-three')">Strategic Solutions</a></li>
+                <li class="nav-link" ><a onclick="scrollToSection('section-four', '.nav__bar')">Our Story</a></li>
+                <li class="nav-link"><a onclick="scrollToSection('section-three', '.nav__bar')">Strategic Solutions</a></li>
        
         </nav>
         
         <nav class="nav__bar">
-            <div class="nav__bar__logo">Final Frontiers</div>
+            <div class="nav__bar__logo"><a href="">Final Frontiers</a></div>
                 <ul class="nav-links">
                     <li class="nav-link"><a href="#">Company</a></li>
                     <li class="nav-link"><a href="#">Products</a></li>
@@ -128,9 +128,9 @@
                          repellat animi nihil, quod eos? Nam aut enim veniam obcaecati 
                          soluta libero aperiam vel ut officiis. Officiis, accusamus.
                     </p>
-                    <button class="section-three__button">Learn More</button>
+                    <button class="section-three__button btn-large">Learn More</button>
                 </div> 
-                <img src="/images/Sat-2.jpg" alt="" class="section-three__large-section__right__image">
+                <img src="/images/Sat-2.jpg" alt="" class="section-three__large-section__image">
             </div>
 
             <div class="section-three__small-section">
@@ -207,20 +207,52 @@
 
     </section>
     <section class="section-four" id="section-four">
+        
+        <!-- <script src="/scripts/slideshow_section-four.js"></script>  -->
         <!-- <h1 class="section-four__heading">Towards The Future</h1> -->
         <div class="section-four__flex-container">
-            <div class="section-four__text">
+            <div class="section-four__text-container">
+
+            <div class="section-four__text" id="section-four__text" >
                 <h1 class="section-four__title">From Where We Have Been...</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi, 
                     similique itaque quibusdam officia provident magnam libero 
                     animi id praesentium tempora eius.</p>
-                <button class="section-four__button">Learn More</button>
+                <!-- <button class="section-four__button">Learn More</button> -->
             </div>
-            <div class="section-four__image-container">
-                <img src="/images/rocket-launch.jpg" alt=""    class="section-four__image" id="section-four__image">
+
+            <div class="section-four__text" id="section-four__text" >
+                <h1 class="section-four__title">...To Where We Are Now...</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi, 
+                    similique itaque quibusdam officia provident magnam libero 
+                    animi id praesentium tempora eius.</p>
+                <!-- <button class="section-four__button">Learn More</button> -->
+            </div>
+
+            <div class="section-four__text" id="section-four__text" >
+                <h1 class="section-four__title">...To Where We Are Going.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut modi, 
+                    similique itaque quibusdam officia provident magnam libero 
+                    animi id praesentium tempora eius.</p>
+                <!-- <button class="section-four__button">Learn More</button> -->
+            </div>
+        </div>
+
+            <div class="section-four__image-container" >
+                <img src="/images/space-station.jpg" alt=""    class="section-four__image" id="section-four__image">
+                
                 <img src="/images/nasa-lab.jpg" alt=""         class="section-four__image" id="section-four__image">
                 <img src="/images/old-computer-lab.jpg" alt="" class="section-four__image" id="section-four__image">
+                <img src="/images/rocket-launch.jpg" alt=""    class="section-four__image" id="section-four__image">
                 
+               
+                <img src="/images/space-lab-2.jpg" alt="" class="section-four__image" id="section-four__image">
+                <img src="/images/rocket-launch-2.jpg" alt=""    class="section-four__image" id="section-four__image">
+                <img src="/images/satellite-1.jpg" alt=""    class="section-four__image" id="section-four__image">
+               
+                <img src="/images/milky-way.jpg" alt=""    class="section-four__image" id="section-four__image">
+                <img src="/images/shuttle-payload.jpg" alt=""    class="section-four__image" id="section-four__image">
+              
             </div>
         </div>
     </section>
@@ -228,17 +260,99 @@
         <h1 class="section-five__header">
             Never Stop Asking Questions
         </h1>
-        <h2 class="section-five__title">Final Frontier's Mission Critical</h2>
-
-
-
+        <div class="setion-five__flex-container">
+            <div class="section-five__left">
+                <h2 class="section-five__title">Final Frontier's Mission Critical</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sint aut 
+                    possimus recusandae? Qui consequuntur nisi voluptas. Adipisci, 
+                    at culpa libero rem iusto pariatur temporibus voluptatem dolore, 
+                    quidem accusamus ab expedita! Ex blanditiis nemo, eos consequuntur 
+                    suscipit, ratione nisi provident aspernatur explicabo, officiis 
+                    aliquam ab iure doloremque iste eaque quasi? Quae repellat non 
+                    omnis ad recusandae ea obcaecati veniam quis!</p>
+                <button class="section__button btn-dark">Subscribe</button>
+            </div>
+            <img class="section-five__image" src="/images/questions.jpg">
+        </div>
     </section>
+
+
+    <footer  class="footer-container">
+        <div class="footer-desktop">
+        <div class="footer-desktop__column">
+            <h2 class="footer-desktop__column__links-title">Company</h2>
+            <ul>
+                <li class="footer-link">About Us</li>
+                <li class="footer-link">Careers</li>
+                <li class="footer-link">Media Coverage</li>
+                <li class="footer-link">Investors</li>
+            </ul>
+        </div>
+        <div class="footer-desktop__column">
+            <h2 class="footer-desktop__column__links-title">Legal</h2>
+            <ul>
+                <li class="footer-link">Privacy Terms</li>
+                <li class="footer-link">License Terms</li>
+                <li class="footer-link">Final Frontier Policy</li>
+                <li class="footer-link">Website Terms of Use</li>
+            </ul>
+        </div>
+
+        <div class="footer-desktop__column">
+            <h2 class="footer-desktop__column__links-title">Explore</h2>
+            <ul>
+                <li class="footer-link">Search Imagery</li>
+                <li class="footer-link">Resources</li>
+                <li class="footer-link">Use Cases</li>
+                <li class="footer-link">Blog</li>
+                <li class="footer-link">Geopspatial Content</li>
+            </ul>
+        </div>
+
+        <div class="footer-desktop__column">
+            <h2 class="footer-desktop__column__links-title">Get In Touch</h2>
+            <ul>
+                <li class="footer-link">Contact Us</li>
+                <li class="footer-link">Sales Inquires</li>
+                <li class="footer-link">Find a Reseller</li>
+                
+        </div>
+
+ 
+       
+        
+       
+    </div>
+    <hr>
+    <div class="footer-desktop__social-icons">
+        <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter-square footer-desktop__social-icon"></i></a>
+        <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin footer-desktop__social-icon"></i></a>
+        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square  footer-desktop__social-icon"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram-square footer-desktop__social-icon"></i></a>
+        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube-square footer-desktop__social-icon"></i></a>
+    </div>
+
+     <div class="footer-desktop__terms-of-use">
+         <div>© 2021 Final Frontier Technologies</div>
+         <a href="#"> Privacy Policy</a>
+         <a href="#"> Website Terms of Use</a>
+
+     </div>
+    </footer>
+    
 </main>
 
 
 
 </body>
 <script src="/scripts/scroll_functions.js"></script>
-<!-- <script src="/scripts/slideshow_section-four.js"></script>  -->
+
+<!-- <script src="scripts/slideshow_section_four_text.js"></script> -->
 <script src="/scripts/header-intersection-observer.js"></script>
+
+<script src="scripts/section-four__observer__slideshow.js"></script>
+
+
+
+
 </html>

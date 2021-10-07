@@ -6,11 +6,8 @@ const headerLinks = document.querySelectorAll(".nav-link")
 console.log(headerLinks.length)
 
 
-
-
 const sectionOneOptions = {
     rootMargin: "-500px 0px 0px 0px"
-    
 
 }
 

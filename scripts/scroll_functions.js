@@ -1,7 +1,7 @@
 
-function scrollToSection(idToScrollTo) {
+function scrollToSection(idToScrollTo, toScrollFrom) {
     const element = document.getElementById(idToScrollTo);
-    const box = document.querySelector('.nav__bar');
+    const box = document.querySelector(toScrollFrom);
     const offset = box.offsetHeight;;
     const bodyRect = document.body.getBoundingClientRect().top;
     const elementRect = element.getBoundingClientRect().top;
