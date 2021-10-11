@@ -3,8 +3,7 @@ const sectionFour = document.querySelector(".section-four");
 
 
 const sectionFourOptions = {
-    threshold: 1.0
-
+    threshold: .3
 }
 const sectionFourObserver = new IntersectionObserver(function(entries, sectionFourObserver){
 

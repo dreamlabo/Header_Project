@@ -7,7 +7,7 @@ console.log(headerLinks.length)
 
 
 const sectionOneOptions = {
-    rootMargin: "-500px 0px 0px 0px"
+    rootMargin: "-640px 0px 0px 0px"
 
 }
 
