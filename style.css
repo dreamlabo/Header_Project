@@ -725,7 +725,7 @@ to {left: -100%}
         }
 
         .section-four__title {
-            font-size: calc(1.5rem + 1vw);
+            font-size: calc(1.4rem + 1vw);
         }
 
         .section-four__text {
@@ -763,7 +763,7 @@ to {left: -100%}
 
 
 .section-five {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: var(--color--main);
     padding: 0 3em;
     text-align: left;
@@ -821,9 +821,44 @@ to {left: -100%}
 
 }
 
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .section-five {
+        padding: 0em;
+
+    }
+    .section-five__header {
+        font-size: calc(1.7rem + 1vw);
+    }
+
+    .section-five__title {
+        font-size: calc(1.3rem + 1vw);
+    }
+
+    .section-five__image {
+        width: max(70%, 350px);
+        margin: 1em;
+    }
+
+    .section-five__left {
+        padding: 1em;
+    }
+}
+
+
+
+
+
+
+
+
 .footer-desktop-container {
-    /* display: block; */
-    display: none;
+    display: block;
+    /* display: none; */
     background-color: var(--color--dark);
     padding: 3em;
     background-image: url(/images/satellite-1.jpg);
@@ -908,7 +943,8 @@ hr {
 
 
 .footer-mobile-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    display: none;
     background-color: var(--color--dark);
     padding: 1em;
     background-image: url(/images/satellite-1.jpg);
@@ -922,4 +958,63 @@ hr {
 .footer-mobile_company-name {
     font-size: calc(3em + 3vw);
     text-transform: uppercase;
+    padding-bottom: .3em;
+}
+
+.footer-moblie__links-container  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.footer-moblie__links-container a {
+    font-size: 1.3rem;
+    margin: 1em 0;
+}
+
+
+.footer-mobile__social-icons {
+    font-size: calc(1.4em + 1vw);
+    padding: 1em 0;
+    color: var(--color--main);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.footer-mobile__terms-of-use  li {
+    list-style-type: none;
+    margin: 1em;
+}
+
+.footer-desktop__social-icon:focus,
+.footer-desktop__social-icon:hover,
+.footer-link-moblie:focus,
+.footer-link-moblie:hover,
+.footer-mobile__links:focus,
+.footer-mobile__links:hover {
+    color: var(--color--white);
+    opacity: .8;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+    .footer-desktop-container {
+        display: none;
+    }
+
+    .footer-mobile-container {
+        display: block;
+    }
+    
 }
