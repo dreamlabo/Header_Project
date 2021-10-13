@@ -24,24 +24,31 @@
 <body>
 <main>
   
-    <header class="nav__bar__container ">
+    
         <nav class="secondary-header">
-            <ul class="nav-links">
-                <li class="nav-link" ><a onclick="scrollToSection('section-four', '.nav__bar')">Our Story</a></li>
-                <li class="nav-link"><a onclick="scrollToSection('section-three', '.nav__bar')">Strategic Solutions</a></li>
-       
+            <ul class="nav-links__secondary">
+                <li class="nav-link__secondary" ><a onclick="scrollToSection('section-four', '.nav__bar')">Our Story</a></li>
+                <li class="nav-link__secondary"><a onclick="scrollToSection('section-three', '.nav__bar')">Strategic Solutions</a></li>
         </nav>
+
+        <header class="nav__bar__container" id="nav__bar">
         
         <nav class="nav__bar">
             <div class="nav__bar__logo"><a href="">Final Frontiers</a></div>
-                <ul class="nav-links">
-                    <li class="nav-link"><a href="#">Company</a></li>
-                    <li class="nav-link"><a href="#">Products</a></li>
-                    <li class="nav-link"><a href="#">Industries</a></li>
-                    <li class="nav-link"><a href="#">News & Events</a></li>
-                    <li class="nav-link"><a href="#">Explore</a></li>
-                </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links-dropdown">
+                <li class="nav-link"><a href="#">Company</a></li>
+                <li class="nav-link"><a href="#">Products</a></li>
+                <li class="nav-link"><a href="#">Industries</a></li>
+                <li class="nav-link"><a href="#">News & Events</a></li>
+                <li class="nav-link"><a href="#">Explore</a></li>
+            </ul>
         </nav>
+        <script src="/scripts/mobile-menu-toggle.js"></script>
     </header>
     
     <section class="section-one">

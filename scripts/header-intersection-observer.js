@@ -17,7 +17,7 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
         if(!entry.isIntersecting){
         // console.log(entry.target);
         header.classList.add("unactive")
-         headerPrimary.style.padding = "1em 3em"
+         headerPrimary.style.padding = "1em 2em"
         headerLogo.style.fontSize = "2rem";
         for(let i = 0; i < headerLinks.length; i++ ) {
             headerLinks[i].style.paddingLeft = "3em";
@@ -32,7 +32,7 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
             }
 
             header.classList.remove("unactive")
-            headerPrimary.style.padding = "5em 3em 2em 3em";
+            headerPrimary.style.padding = "1em 3em 1em 2em";
             headerLogo.style.fontSize = "2rem";
         
         }
